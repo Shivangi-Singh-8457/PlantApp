@@ -1,0 +1,22 @@
+<html>
+ <body>
+    <h2>Sign In</h2>
+    <form class="reg" #userForm="ngForm" (ngSubmit)="onsubmit(userForm)" enctype="multipart/form-data">
+        <div class="file-upload">
+        <label for="email">Email Id</label> &nbsp;
+        <input type="text" id="email" name="email" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br ><br>
+        <label for="pswd">Password</label> &nbsp;
+        <input type="text" name="pswd" required [(ngModel)]="password"/>
+        <br ><br>        
+        <input class="br-tag" type="reset" value="Reset">
+        <input class="br-tag" [disabled]="userForm.invalid" type="submit" value="Sign In"/>
+        </div>
+    </form>
+    <div class="footer">
+        <p>
+          If new user register yourself <a href="register">here</a>
+        </p>
+     </div>
+ </body>  
+</html>
