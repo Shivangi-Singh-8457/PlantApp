@@ -1,0 +1,105 @@
+<!--  Nav Bar 
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="/">Plantopedia</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/refer">Refer us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<html>
+ <body>
+  <div class="imag">
+    <form class="reg" #userForm="ngForm" (ngSubmit)="onsubmit(userForm)" enctype="multipart/form-data">
+        <div class="file-upload">
+        <label for="email">Email Id</label> &nbsp;
+        <input type="text" id="email" name="email" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br ><br>
+        <label for="pswd">Password</label> &nbsp;
+        <input type="text" name="pswd" required [(ngModel)]="password"/>
+        <br ><br>        
+        <input class="br-tag" type="submit" value="Forgot Password" (click)="goToPage('forgotPswd');"/> &nbsp;
+        <input class="br-tag" [disabled]="userForm.invalid" type="submit" value="Sign In"/>
+        <p>
+          New user? 
+        <button class="btn btn-light "(click)="goToPage('register');">   Signup</button>
+        </p>
+        </div>
+    </form>
+    </div>
+ </body>  
+</html> -->
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="/">Plantopedia</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/refer">Refer us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<html>
+ <body> 
+    <div class="imag">   
+        <form class="reg" #userForm="ngForm" (ngSubmit)="onsubmit(userForm)" enctype="multipart/form-data">
+        <div class="file-upload">
+        <h2>Log in</h2>
+        <label for="email">Email Id</label> &nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email"  placeholder="example@xyz.com" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br ><br>
+        <label for="pswd">Password</label> &nbsp;
+        <input type="password" name="pswd" required [(ngModel)]="password"/>
+        <br ><br>
+        <input class="br-tag" [disabled]="userForm.invalid" type="submit" value="Sign In"/>
+        <a class="nav-link" href="/forgotPswd" (click)="goToPage('forgotPswd');">Forgotten Password ?</a>
+        <p>
+          New user? 
+        <button class="btn btn-light "(click)="goToPage('register');">   Signup</button>
+        </p>
+        </div>
+      </form>
+    </div>
+ </body>  
+</html>

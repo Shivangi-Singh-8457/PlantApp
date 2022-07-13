@@ -1,0 +1,75 @@
+body
+{
+    padding: 15%;
+    background-color: velvet;
+    height: 100%;
+    
+}   
+.imag{
+  background-image: url("/assets/images/i2.jpg");
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+} 
+
+h2{
+  text-align: center;  
+  color:#FFFFFF;
+  padding-bottom: 7%;
+}
+p
+{
+  font-size: larger;
+  color:#FFFFFF ;
+}
+.reg{
+    //margin-top: 170px;
+    margin-left: 550px;
+    text-align: center;
+}
+.br-tag{
+    margin: 5px;
+    background-color: #fff; 
+    border: none;
+  }
+.br-tag:hover{
+    margin: 5px;
+    //background-color: #4febc9; 
+    background-color: rgb(113, 231, 113);
+  }
+  .btn:hover{
+    //background-color: #4febc9;
+    background-color: rgb(113, 231, 113);
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+p{
+  margin-left: 7%;
+  margin-top: 8%;
+}
+.btn{
+    margin:5px;
+    padding-left: 5%;
+    font-weight:600;
+    text-align: center;
+    margin-left: 5%;
+
+  }
+  .file-upload{
+    background-color:#44be63;
+    width: 400px;
+    height: auto;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    padding: 5%;
+    margin-left: 450px;
+  }
+  .nav-link{
+    color: yellow;
+  }

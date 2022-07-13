@@ -1,0 +1,64 @@
+body
+{
+    padding: 15%;
+    background-color: #63d471;
+}    
+.imag{
+  background-image: url("/assets/images/i2.jpg");
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+} 
+h2{
+  text-align: center;  
+  color:#FFFFFF;
+  padding-bottom: 4%;
+  padding-top: 2%;
+}
+
+.reg{
+  //margin-top: 170px;
+  margin-left: 550px;
+  text-align: center;
+  align-content: center;
+}
+.br-tag{
+    margin: 5px;
+    background-color: #fff; 
+    border: none;
+  }
+.br-tag:hover{
+    margin: 5px;
+    background-color: rgb(113, 231, 113); 
+  }
+  .file-upload{
+    background-color:#44be63;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 300px;
+    margin-top: 120px;
+    padding: 5%;
+    margin-left: 430px;
+  }
+  p{
+    margin-left: 7%;
+    margin-top: 5%;
+    padding-bottom:20%;
+  }
+  .btn{
+    margin:5px;
+    padding-left: 5%;
+    font-weight:600;
+    text-align: center;
+    margin-left: 5%;
+
+  }
+  .btn:hover{
+    margin: 5px;
+    background-color: rgb(113, 231, 113);
+  }

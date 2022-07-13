@@ -1,0 +1,167 @@
+<section  id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Plantopedia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/refer">Refer us</a>
+            </li>
+            <li class="nav-item" *ngIf="!login_flag; else logout">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <ng-template #logout>
+            <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            </ng-template>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- Title -->
+  
+      <div class="row">
+  
+        <div class="col-lg-6">
+          <h1 class="first-txt">Find any plant by its leaf and information that you feel by seeing it.</h1>
+          <button type="button" class="btn btn-light btn-lg download-button btn-green" (click)="goToPage('detect');">
+            <i class="fab fa-envira"></i> Detect
+          </button>
+          <button type="button" class="btn btn-light btn-lg download-button btn-green"(click)="goToPage('addleaf');">
+            <i class="fab fa-envira"></i> Add Leaf
+          </button>
+          <button type="button" class="btn btn-light btn-lg download-button btn-green"(click)="goToPage('review');">
+            <i class="fab fa-envira"></i> Review
+          </button>
+        </div>
+        <div class="col-lg-6">
+          <div class="img-container">
+            <img
+            class="tittle-image"
+            src="assets/images/plant1.jpg"
+            alt="iphone-mockup"
+          />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  
+  <section id="features">
+      <div class="row">
+        <div class="col-lg-4 features-box">
+          <i class="fas fa-check-circle fa-4x icon"> </i>
+          <h3>Interactive</h3>
+          <p>Interactive way to detect plant</p>
+        </div>
+        <div class="col-lg-4 features-box">
+          <i class="fas fa-bullseye fa-4x icon"> </i>
+          <h3>Nature</h3>
+  
+          <p>We all are surrounded by several plants , do you want to detect them.</p>
+        </div>
+        <div class="col-lg-4 features-box">
+          <i class="fas fa-heart fa-4x icon"> </i>
+          <h3>Save plants</h3>
+          <p>In this era of construction we need to save plants to save nature and</p>
+        </div>
+      </div>
+  </section>
+  
+  <!-- Testimonials -->
+  
+  <!-- <section class="colored-section" id="testimonials">
+  
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2>
+            We are creating the scientific database of plants and also we strive to make it
+            fun and easy for the young generations to interact with nature and grow up in the spirit
+            of protecting this amazing planet we live on
+         </h2>
+           <img class="testimonial-image" src="/assets/images/blue rose.jpg" alt="dog-profile" />
+           <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">“Trees are sanctuaries. Whoever knows how to speak to them, whoever knows how to listen to them, can learn the truth.”</h2>
+          <img class="testimonial-image" src="assets/images/tree_image.jpg" alt="lady-profile">
+          <em>― Herman Hesse</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">“It is not so much for its beauty that the forest makes a claim upon men’s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.”</h2>
+          <img class="testimonial-image" src="assets/images/tree_img2.jpg" alt="lady-profile">
+          <em>― Robert Louis Stevenson</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"The tree is more than first a seed, then a stem, then a living trunk, and then dead timber. The tree is a slow, enduring force straining to win the sky.”</h2>
+          <img class="testimonial-image" src="/assets/images/baby_plant_img.jpg" alt="lady-profile">
+          <em>― Antoine de Saint-Exupéry</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  
+  </section>
+  
+  
+  <section id="press">
+    <img class="press-image" src="/assets/images/TechCrunch.png" alt="tc-logo" />
+    <img class="press-image" src="/assets/images/tnw.png" alt="tnw-logo" />
+    <img class="press-image" src="/assets/images/bizinsider.png" alt="biz-insider-logo" />
+    <img class="press-image" src="/assets/images/mashable.png" alt="mashable-logo" />
+  </section> -->
+  
+  
+  <!-- Footer -->
+
+  <!-- img section -->
+  <div class="img-con">
+    <div class="carosel">
+      <div class="carosel-item">
+        <img src="/assets/images/baby_plant_img.jpg" alt="">
+      </div>
+      <div class="carosel-item">
+        <img src="/assets/images/blue rose.jpg" alt="">
+      </div>
+      <div class="carosel-item">
+        <img src="/assets/images/plant1.jpg" alt="">
+      </div>
+      <div class="carosel-item">
+        <img src="/assets/images/tree_image.jpg" alt="">
+      </div>
+      <div class="carosel-item">
+        <img src="/assets/images/tree_img2.jpg" alt="">
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <footer id="footer">
+    <p>© Copyright 2022 plantopedia</p>
+  </footer>

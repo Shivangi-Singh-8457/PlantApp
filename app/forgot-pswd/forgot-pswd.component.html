@@ -1,0 +1,31 @@
+<html>
+ <body>
+  <div class="imag">
+    <form *ngIf="flag" class="reg" #userForm="ngForm" (ngSubmit)="onsubmit(userForm)" enctype="multipart/form-data">
+        <div class="file-upload">
+        <label for="email">Email Id</label> &nbsp; 
+        <input type="text" id="email" name="email" placeholder="example@xyz.com" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br><p>{{email_msg}}</p>
+        <input class="br-tag" [disabled]="userForm.invalid" type="submit" value="Submit"/>
+        </div>
+    </form>
+    <form *ngIf="email_flag" class="reg" #otpForm="ngForm" (ngSubmit)="otpsubmit(otpForm)" enctype="multipart/form-data">
+      <div class="file-upload">
+      <label for="otp">Enter OTP sent through email</label> <br><br>
+      <input type="text" name="otp" required [(ngModel)]="otp"/>
+      <br><p>{{otp_msg}}</p>       
+        <input class="br-tag" [disabled]="otpForm.invalid" type="submit" value="Enter"/>
+        <input class="br-tag" type="submit" value="Resend" (click)="resend()"/>
+      </div>
+  </form>
+  <form *ngIf="otp_flag" class="reg" #pswdForm="ngForm" (ngSubmit)="pswdsubmit(pswdForm)" enctype="multipart/form-data">
+    <div class="file-upload">
+    <label for="pswd">New Password</label> &nbsp;
+    <input type="password" name="pswd" required [(ngModel)]="password"/>
+    <br><br>        
+      <input class="br-tag" [disabled]="pswdForm.invalid" type="submit" value="Submit"/>
+    </div>
+  </form>
+  </div>
+ </body>  
+</html>

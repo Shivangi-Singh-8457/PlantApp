@@ -1,0 +1,52 @@
+<!-- <html>
+ <body>
+    <div class="imag">
+    <form class="reg" #userForm="ngForm" (ngSubmit)="onsubmit(userForm)" enctype="multipart/form-data">
+        <div class="file-upload">
+        <label for="email">Email Id</label> &nbsp;
+        <input type="text" id="email" name="email" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br ><br>
+        <label for="phone">Mobile No.</label> &nbsp;
+        <input type="text" name="phone" required [(ngModel)]="phone" pattern="[0-9]{10}"/>
+        <br > <br>
+        <label for="pswd">Password</label> &nbsp;
+        <input type="text" name="pswd" required [(ngModel)]="password"/>
+        <br ><br>        
+        <input class="br-tag" type="reset" value="Reset">
+        <input class="br-tag" [disabled]="userForm.invalid" type="submit" value="Sign Up"/>
+        <p>
+            Already registered? 
+          <button class="btn btn-light "(click)="goToPage('login');"> Login</button>
+        </p>    
+        </div>
+    </form>
+    </div>
+ </body>  
+</html> -->
+<html>
+ <body>
+    <div class="imag">   
+    <form class="reg" #userForm="ngForm" (ngSubmit)="onsubmit(userForm)" enctype="multipart/form-data">
+        <div class="file-upload">
+            <h2>Sign Up</h2>
+        <label for="email">Email Id</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="email" name="email" placeholder="example@xyz.com" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br ><br>
+        <label for="phone">Mobile No</label> &nbsp;
+        <input type="text" name="phone" id="num" required [(ngModel)]="phone" pattern="[0-9]{10}"/>
+        <br > <br>
+        <label for="pswd">Password</label> &nbsp; &nbsp;&nbsp;
+        <input type="password" name="pswd" required [(ngModel)]="password"/>
+        <br ><br>        
+        <input class="br-tag" type="reset" value="Reset">
+        <input class="br-tag" [disabled]="userForm.invalid" type="submit" value="Sign Up"/>
+        <p>
+            Already registered? 
+          <button class="btn btn-light "(click)="goToPage('login');"> Login</button>
+        </p>    
+    </div>
+    </form>
+    </div>
+ </body>  
+</html>
+
