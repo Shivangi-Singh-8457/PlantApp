@@ -68,7 +68,7 @@ def insert_sql_comand(keys,value):
 
 def sendMail(otp):
    global user_email 
-   msg = Message('Hello', sender = 'shivangi_52111104@nitkkr.ac.in', recipients = [user_email])
+   msg = Message('Hello', sender = 'your_email', recipients = [user_email])
    msg.body = "This email is from Plantopedia.\nyour OTP is "+otp 
    mail.send(msg)
 
