@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+}
+body{
+    padding-top: 2%;
+    padding: 5%;
+}
+textarea{
+  width: 100%;
+  background-color: rgb(197, 247, 221);
+  border: none;
+}
+.btn{
+    margin: 2px;
+    background-color: rgb(68, 45, 241);
+    color: white;
+}
+.folder-list{
+    width:100%;
+    height:100%;
+}
+.setimg{
+    width:90%;
+    height:250px;
+    padding: 2px;
+    
+}
+.card
+  {
+    margin-top: 5px;
+    padding: 4px;
+  }
+.card-img-top:hover
+  {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.row{
+  display: flex;
+  width: auto;
+  justify-content: left;
+  color: white;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  //content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+// .active:after {
+//   content: "\2212";
+// }
+
+.content {
+  margin-top: 5px;
+  padding: 4px;
+  max-height: 100px;
+  overflow: auto;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  white-space: pre-wrap;
+}
