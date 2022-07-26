@@ -1,0 +1,44 @@
+Table structure for table `temp_images`
+--
+
+CREATE TABLE `temp_images` (
+  `folder_id` int(11) NOT NULL,
+  `img_index` int(11) NOT NULL,
+  `upvote` int(11) NOT NULL DEFAULT 0,
+  `downvote` int(11) NOT NULL DEFAULT 0,
+  `report` int(11) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Table structure for table `folder_reviewers`
+--
+
+CREATE TABLE `folder_reviewers` (
+  `user_id` varchar(50) NOT NULL,
+  `folder_id` int(11) NOT NULL,
+  `vote` int(11) NOT NULL DEFAULT 0,
+  `report` int(11) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Table structure for table `image_reviewers`
+--
+
+CREATE TABLE `image_reviewers` (
+  `user_id` varchar(50) NOT NULL,
+  `folder_id` int(11) NOT NULL,
+  `img_index` int(11) NOT NULL,
+  `vote` int(11) NOT NULL DEFAULT 0,
+  `report` int(11) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Table structure for table `reviews`
+--
+
+CREATE TABLE `reviews` (
+  `folder_id` int(11) NOT NULL,
+  `user_id` varchar(50) NOT NULL,
+  `comment` varchar(500) NOT NULL,
+  `date` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
