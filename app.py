@@ -13,8 +13,8 @@ app = Flask(__name__)
 mail=Mail(app)
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'shivangi_52111104@nitkkr.ac.in'
-app.config['MAIL_PASSWORD'] = 'Shivangi@4321'
+app.config['MAIL_USERNAME'] = ''
+app.config['MAIL_PASSWORD'] = ''
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
@@ -66,7 +66,7 @@ def insert_sql_comand(keys,value):
 
 def sendMail(otp):
    global user_email 
-   msg = Message('Hello', sender = 'shivangi_52111104@nitkkr.ac.in', recipients = [user_email])
+   msg = Message('Hello', sender = '', recipients = [user_email])
    msg.body = "This email is from Plantopedia.\nyour OTP is "+otp 
    mail.send(msg)
 
